@@ -1,0 +1,108 @@
+#include <iostream>
+
+
+using namespace std;
+
+
+class MyClass {
+
+public:
+
+
+	void SetName(string name) {
+
+		this->name = name;
+		
+	}
+
+	string GetName() {
+		return name;
+	}
+
+	void DisplayInfo() {
+
+		cout << "DS:" << name << endl;
+
+	}
+private:
+	string name;
+};
+
+class MySubclass : public MyClass {
+public:
+	void SetAge(int age) {
+
+
+		this->age = age;
+	}
+	int GetAge() {
+
+		return age;
+	}
+	void DisplayInfo() {
+
+		MyClass::DisplayInfo();
+
+		cout << "Возраст:" << age << "год(а/лет)" << endl;
+	}
+private:
+	int age;
+public:
+
+	MySubclass() = default;
+};
+int main() 
+{
+	setlocale(LC_ALL, "Rus");
+
+	MyClass myObject;
+
+	myObject.SetName("Dark souls tier list Boss");
+
+	MyClass myObject;
+
+	myObject.SetName ( "Smoyg")
+	
+
+	MyClass myObject;
+
+	myObject.SetName("maleniya");
+	
+	
+
+	MyClass MyObject;
+
+	mySubObject.SetName("Gwin");
+
+	mySubObject.SetAge(1500);
+
+	MySubclass mySubObject;
+
+	mySubObject.SetName("Gwindolin Dark Sun");
+
+	mySubObject.SetAge(1050);
+
+	MySubclass mySubObject;
+
+	mySubObject.SetName("Guinevere - the Princess of Light");
+
+	mySubObject.SetAge(1150);
+
+	cout << "Имя объекта." << myObject.GetName() << endl;
+
+	cout << "Имя объекта:" << mySubObject.GetName() << endl;
+
+	cout << "Имя объекта:" << mySubObject.GetName() << endl;
+
+	cout << "Имя объекта:" << mySubObject.GetName() << endl;
+
+	cout << " Имя объекта" << mySubObject.GetName() << endl;
+
+	cout << "Имя oбъекта." << mySubObject.GetName() << endl;
+
+	cout << "Имя объекта." << mySubObject.GetName() << endl;
+
+
+	return 0;
+
+}
